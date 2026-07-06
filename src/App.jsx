@@ -1,3 +1,23 @@
+import UseCallback from "./UseCallback"
+
+export default function App(){
+  return(
+    <>
+    <UseCallback/>
+    </>
+  )
+}
+//-----useRef----->
+// import UseRef from "./UserRef"
+
+// export default function App(){
+//   return(
+//     <>
+//     <UseRef/>
+//     </>
+//   )
+// }
+
 //---useReducer------->
 // import UseReducerCounter from "./useReducerCounter"
 // function App() {
@@ -8,7 +28,7 @@
 //   )
 // }
 
-import { useState } from "react";
+//import { useState } from "react";
 
 //----useContext----->
 
@@ -28,28 +48,28 @@ import { useState } from "react";
 // }
 
 // 1. Theme switcher
-import { ThemeContext } from "./ThemeContext";
-import Home from "./Home";
-import "./App.css"
+// import { ThemeContext } from "./ThemeContext";
+// import Home from "./Home";
+// import "./App.css"
 
-function App() {
-  const[theme, setTheme] = useState("light");
+// function App() {
+//   const[theme, setTheme] = useState("light");
 
-  const toggleTheme = () =>{
-    if(theme == "light"){
-      setTheme("dark");
-    }
-    if(theme == "dark"){
-      setTheme("light");
-    }
-  }
-  return (
-   <ThemeContext.Provider value={{theme, toggleTheme}}>
-    <Home />
-   </ThemeContext.Provider>
+//   const toggleTheme = () =>{
+//     if(theme == "light"){
+//       setTheme("dark");
+//     }
+//     if(theme == "dark"){
+//       setTheme("light");
+//     }
+//   }
+//   return (
+//    <ThemeContext.Provider value={{theme, toggleTheme}}>
+//     <Home />
+//    </ThemeContext.Provider>
    
-  );
+//   );
   
-}
+// }
 
-export default App
+// export default App
